@@ -9,6 +9,6 @@ load_dotenv()  # 會讀目前工作目錄下的 .env
 client = genai.Client()
 
 response = client.models.generate_content(
-    model="gemini-3-flash-preview", contents="台北旅遊規劃"
+    model="gemini-3-flash-preview", contents="華特固態照明公司評比"
 )
 print(response.text)
