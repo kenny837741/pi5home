@@ -1,6 +1,14 @@
-def main():
-    print("Hello from lesson2!")
+from google import genai
+from dotenv import load_dotenv
+from google import genai
+
+load_dotenv()  # 會讀目前工作目錄下的 .env
 
 
-if __name__ == "__main__":
-    main()
+# The client gets the API key from the environment variable `GEMINI_API_KEY`.
+client = genai.Client()
+
+response = client.models.generate_content(
+    model="gemini-3-flash-preview", contents="台北旅遊規劃"
+)
+print(response.text)
