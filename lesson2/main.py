@@ -1,6 +1,6 @@
 from google import genai
 from dotenv import load_dotenv
-
+#test
 load_dotenv()  # 會讀目前工作目錄下的 .env
 
 # The client gets the API key from the environment variable `GEMINI_API_KEY`.
