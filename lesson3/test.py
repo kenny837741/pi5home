@@ -39,6 +39,9 @@ class Filter:
 
     def inlet(self, body: dict, __user__: Optional[dict] = None) -> dict:
         # 我要取得使用者輸入的內容
+        print(f"inlet:{__name__}")
+        print(f"inlet:body:{body}")
+        print(f"inlet:user:{__user__}")
         print("使用者輸入")
         
         return body
