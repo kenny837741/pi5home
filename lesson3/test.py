@@ -38,6 +38,8 @@ class Filter:
         pass
 
     def inlet(self, body: dict, __user__: Optional[dict] = None) -> dict:
+        # 我要取得使用者輸入的內容
+        print("使用者輸入")
         
         return body
 
@@ -45,8 +47,9 @@ class Filter:
         # Modify or analyze the response body after processing by the API.
         # This function is the post-processor for the API, which can be used to modify the response
         # or perform additional checks and analytics.
-        print(f"outlet:{__name__}")
-        print(f"outlet:body:{body}")
-        print(f"outlet:user:{__user__}")
+        # print(f"outlet:{__name__}")
+        # print(f"outlet:body:{body}")
+        # print(f"outlet:user:{__user__}")
+        print("模型輸出")
 
         return body
